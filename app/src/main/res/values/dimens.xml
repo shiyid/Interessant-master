@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="divider_height">1px</dimen>
+    <dimen name="keyline_1">72dp</dimen>
+    <dimen name="fab_min_offset">220dp</dimen>
+
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="android:toolbarStyle">@style/LightToolbar</item>
+    </style>
+
+    <style name="AppTheme.LightStatusBar" parent="AppTheme"/>
+
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:colorControlNormal">@android:color/black</item>
+    </style>
+
+    <style name="LightToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="theme">@style/LightToolbarThemeOverlay</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextColor">@android:color/black</item>
+    </style>
+    
+    <style name="LightToolbarThemeOverlay" parent="Widget.AppCompat.ActionBar">
+        <item name="android:colorControlNormal">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.Movie">
+        <item name="android:windowEnterTransition">@transition/movie_detail_enter</item>
+        <item name="android:windowReturnTransition">@transition/movie_detail_return</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/movie_detail_share_enter</item>
+    </style>
+
+</resources>

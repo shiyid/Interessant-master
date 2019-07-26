@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/movie_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:background="@color/item_background">
+
+        <day.nice.happyvideo.widget.RatioImageView
+            android:id="@+id/movie_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:background="@color/item_background"
+            tools:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/movie_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:text="Interessant" />
+
+        <TextView
+            android:id="@+id/author_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:padding="2dp"
+            android:background="@color/tag_color"
+            tools:text="HAHA"/>
+
+    </FrameLayout>
+
+</LinearLayout>
